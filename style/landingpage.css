@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
+    margin: 0;
+    padding: -20;
+    color: #000000;
+}
+
+nav{
+    background: linear-gradient(to bottom right,#6f42c1);
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#register-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #d4e3d7;
+    height: 80vh;
+    margin: 0;
+    color: #000000;
+
+}
+nav{
+    background: linear-gradient(to bottom right,#6f42c1);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    
+}
+
+/* Navigasi */
+.navbar-container {
+    padding: 0 50px; /* Tambahkan jarak kiri dan kanan */
+}
+
+.logo {
+    max-height: 50px; /* Ukuran maksimum logo */
+    width: auto;
+}
+
+.nav-link {
+    color: blueviolet; /* Warna teks link */
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0); /* Warna teks saat hover */
+}
+
+.btn-purple {
+    color: white;
+    background-color: blueviolet; /* Warna tombol ungu */
+    border-radius: 20px; /* Tombol dengan sudut melingkar */
+}
+
+.btn-purple:hover {
+    background-color: rgb(115, 54, 173); /* Warna tombol saat hover */
+}
+
+/* Bagian Utama */
+.hero-section {
+    min-height: 100vh; /* Ketinggian penuh layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Kartu Fitur */
+.feature-card {
+    background-color: white; /* Latar belakang putih */
+    color: black; /* Teks warna hitam */
+    padding: 20px;
+    border-radius: 11px; /* Sudut melingkar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Latar Ungu */
+.purple-bg {
+    background: linear-gradient(to bottom right,#6f42c1);
+    /* Padding bagian */
+}
+
+
+.svg-icon {
+    width: 40px; /* Sesuaikan ukuran SVG */
+    align-items: center;
+}
+
+.img-fluid{
+    border-radius: 30px; /* Sudut melingkar */
+}
+.footer {
+    background: linear-gradient(to bottom right,#6f42c1);
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+}      
+
+
+.footer-logo-img {
+    width: 70px; 
+    height: auto;
+    margin-left: 20px; 
+}
+
+.footer-menu ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li, .footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a, .footer-social ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footer-menu ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ul li a {
+    font-size: 12px;
+}
+
+.footer-social ul li a:hover {
+    color: #ffdd57;
+}
+
+.logoo {
+    max-height: 90px;
+    width: auto;
+}
+
+.bi-google{
+    text-align: left;
+}
+
+.btn-primary {
+    background-color: #6f42c1;
+    border-color: #6a1b9a;
+}
+
+.btn-primary:hover {
+    background-color: #270e56; 
+    border-color: #270e56;
+}

@@ -1,0 +1,142 @@
+/* Gaya dasar untuk halaman pendaftaran */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #270e56, #6f42c1);
+    color: white;
+}
+
+#register-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #d4e3d7;
+    height: 80vh;
+    margin: 0;
+    color: #000000;
+
+}
+
+h2 {
+    color: #2d2d2d;
+    font-weight: bold;
+}
+
+#google-signup {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+}
+
+#google-signup:hover {
+    background-color: #ffffff;
+}
+
+#email-signup {
+    background-color: #6f42c1;
+    color: white;
+    border: 2px solid #000000;
+}
+
+#email-signup:hover {
+    background-color: #270e56;
+}
+
+p {
+    color: #666;
+}
+
+p a {
+    color: #1976D2;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive: agar halaman tampak baik di perangkat kecil */
+@media (max-width: 768px) {
+    #register-container {
+        padding: 25px;
+    }
+}
+
+
+
+nav{
+    background: linear-gradient(to bottom right,#6f42c1);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    
+}
+
+/* Navigasi */
+.navbar-container {
+    padding: 0 50px; /* Tambahkan jarak kiri dan kanan */
+}
+
+.logo {
+    max-height: 50px; /* Ukuran maksimum logo */
+    width: auto;
+}
+
+.nav-link {
+    color: #a08ec1; /* Warna teks link */
+}
+
+.nav-link:hover {
+    color: white; /* Warna teks saat hover */
+}
+
+/* Styling Footer */
+.footer {
+    background: linear-gradient(to bottom right,#6f42c1);
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo-img {
+    width: 70px; 
+    height: auto;
+    margin-left: 20px; 
+}
+
+.footer-menu ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li, .footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a, .footer-social ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footer-menu ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ul li a {
+    font-size: 12px;
+}
+
+.footer-social ul li a:hover {
+    color: #ffdd57;
+}
+
+.logoo {
+    max-height: 90px;
+    width: auto;
+}
+
+.bi-google{
+    text-align: left;
+}
