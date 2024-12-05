@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['simpan'])) {
                         VALUES ('$username', '$email', NULL, NULL, NULL, CURRENT_DATE)";
         
         if ($conn->query($queryProfil) === true) {
-            $succesMsg = "pendaftaran akun dengan username " . $username . " berhasil";
+            $succesMsg = "pendaftaran akun dengan nama " . $username . " berhasil";
             header("Location: masuk.php?successMsg=$succesMsg");
             exit(); 
         } else {

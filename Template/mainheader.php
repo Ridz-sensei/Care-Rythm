@@ -4,7 +4,7 @@ include '../Data/dbconnection.php';
 session_start();
 $namaPengguna = isset($_SESSION['username']) ? htmlspecialchars($_SESSION['username']) : 'Pengguna';
 
-$sqlStatement = "SELECT * FROM profil";
+$sqlStatement = "SELECT * FROM profil WHERE username = '$namaPengguna'";
 $query = mysqli_query($conn, $sqlStatement);
 $data = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
@@ -54,7 +54,7 @@ $data = mysqli_fetch_all($query, MYSQLI_ASSOC);
                 <div class="dropdown-center">
                     <a data-bs-toggle="dropdown">
                         <div class="rounded-circle overflow-hidden" style="width: 75px; height: 75px;">
-                            <img src="../image/<?= $foto ?>" alt="https://via.placeholder.com/120x120" class="" style="height: 75px; width: auto;">
+                            <img src="../image/<?= $foto ?>" alt="foto profil" class="" style="height: 75px; width: auto;">
                         </div>
                     </a>
                     <ul class="dropdown-menu">
