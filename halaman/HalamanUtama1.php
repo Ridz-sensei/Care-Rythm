@@ -149,41 +149,26 @@ $data = mysqli_fetch_all($query, MYSQLI_ASSOC);
             <div class="jadwal col-12 col-md-5 text-center">
                 <div class="container my-4">
                     <h3 class="text-center mb-4">Jadwal Kegiatan</h3>
-                    <div class="table-responsive">
+                    <div class="table-responsive card">
+                        <h6>Senin</h6>
                         <table class="table table-bordered">
                             <thead class="thead-light text-center">
                                 <tr>
                                     <th scope="col">Jam</th>
-                                    <th scope="col">Senin</th>
-                                    <th scope="col">Selasa</th>
-                                    <th scope="col">Rabu</th>
-                                    <th scope="col">Kamis</th>
-                                    <th scope="col">Jumat</th>
+                                    <th scope="col">Jadwal</th>
+                                    <th scope="col">Rencana</th>
                             </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row" class="align-middle text-center">08:00 - 10:00</th>
                                     <td>
-                                    <div class="card p-2">
-                                        <h6 class="card-title">Rapat Tim</h6>
-                                        <p class="card-text">Ruang Meeting A</p>
-                                    </div>
-                                    </td>
-                                    <td>
-                                    <div class="card p-2">
-                                        <h6 class="card-title">Diskusi Proyek</h6>
-                                        <p class="card-text">Ruang 202</p>
-                                    </div>
+                                        <div class="card p-2">
+                                            <h6 class="card-title">Diskusi Proyek</h6>
+                                            <p class="card-text">Ruang 202</p>
+                                        </div>
                                     </td>
                                     <td></td>
-                                    <td></td>
-                                    <td>
-                                    <div class="card p-2">
-                                        <h6 class="card-title">Presentasi</h6>
-                                        <p class="card-text">Aula Utama</p>
-                                    </div>
-                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="align-middle text-center">10:00 - 12:00</th>
@@ -193,33 +178,57 @@ $data = mysqli_fetch_all($query, MYSQLI_ASSOC);
                                         <h6 class="card-title">Workshop</h6>
                                         <p class="card-text">Lab Komputer</p>
                                     </div>
-                                    </td>
-                                    <td>
-                                    <div class="card p-2">
-                                        <h6 class="card-title">Rapat Divisi</h6>
-                                        <p class="card-text">Ruang 303</p>
-                                    </div>
-                                    </td>
-                                    <td></td>
-                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="align-middle text-center">13:00 - 15:00</th>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row" class="align-middle text-center">12:00 - 15:00</th>
                                     <td>
-                                    <div class="card p-2">
+                                    <div class="card p-2 mb-2">
                                         <h6 class="card-title">Training</h6>
                                         <p class="card-text">Ruang 101</p>
                                     </div>
-                                    </td>
-                                    <td>
                                     <div class="card p-2">
                                         <h6 class="card-title">Briefing</h6>
                                         <p class="card-text">Ruang Meeting B</p>
                                     </div>
                                     </td>
                                     <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle text-center">15:00 - 16:30</th>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    <div class="card p-2">
+                                        <h6 class="card-title">Belajar Mandiri</h6>
+                                        <p class="card-text">Warkop</p>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle text-center">17:30 - 20:00</th>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    <div class="card p-2">
+                                        <h6 class="card-title">Belajar Mandiri</h6>
+                                        <p class="card-text">Warkop</p>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle text-center">20:00</th>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    <div class="card p-2 mb-2">
+                                        <h6 class="card-title">Refleksi diri</h6>
+                                        <p class="card-text">Kamar</p>
+                                    </div>
+                                    <div class="card p-2">
+                                        <h6 class="card-title">Tidur cepat</h6>
+                                        <p class="card-text">Kamar</p>
+                                    </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
