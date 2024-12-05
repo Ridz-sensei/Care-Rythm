@@ -82,6 +82,9 @@ include '../Template/mainheader.php';
             <div class="jadwal col-12 col-md-5 text-center">
                 <div class="container my-4">
                     <h3 class="text-center mb-4">Jadwal Kegiatan</h3>
+                    <div style="text-align: left; margin-bottom: 5px;">
+                        <a href="tambahisijadwal.php">tambah jadwal</a>
+                    </div>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead class="thead-light text-center">
@@ -95,7 +98,7 @@ include '../Template/mainheader.php';
                             </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr>    
                                     <th scope="row" class="align-middle text-center">08:00 - 10:00</th>
                                     <td>
                                     <div class="card p-2">

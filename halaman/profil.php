@@ -16,6 +16,10 @@ foreach ($data as $key => $isi){
   $asal = $isi['asal'];
   $bergabung = $isi['bergabung'];
 }
+
+$waktu_bergabung = new DateTime($isi['bergabung']);
+$sekarang = new DateTime();
+$lama_bergabung = date_diff($waktu_bergabung,$sekarang);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -173,20 +177,34 @@ foreach ($data as $key => $isi){
     <!-- Tab Navigasi -->
     <div class="tabs">
       <a href="#" class="active">Profil</a>
-      <a href="editProfil.php" class="edit-button">Edit Profile</a>
+      <div>
+        <p>
+          <a href="editkatasandi.php">Ganti Kata Sandi</a>
+          |
+          <a href="editProfil.php" class="edit-button">Edit Profile</a>
+        </p>
+      </div>
     </div>
 
     <!-- Konten -->
     <div class="content">
+      
       <h3>Status</h3>
       <p><?= $tentang ?></p>
 
       <div class="stats">
         <p><strong>Bergabung:</strong> <?= $bergabung ?></p>
+        <p><strong>sudah bergabung selama:</strong></p>
+        <p><?= $lama_bergabung->y ?> tahun <?= $lama_bergabung->m ?> bulan <?= $lama_bergabung->d ?> hari</p>
         <p><strong>Total Masuk:</strong></p>
         <p><strong>Terakhir Masuk:</strong> <?= date('Y-m-d H:i:s'); ?></p>
       </div>
     </div>
+    <?php if (isset($_GET['Msg'])) { ?>
+        <div class="alert alert-success" role="alert">
+            <?= $_GET['Msg'] ?>
+        </div>
+    <?php } ?>
   </div>
 </body>
 </html>
