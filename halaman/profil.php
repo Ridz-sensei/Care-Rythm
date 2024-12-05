@@ -178,7 +178,7 @@ foreach ($data as $key => $isi){
 
     <!-- Konten -->
     <div class="content">
-      <h3>Tentang</h3>
+      <h3>Status</h3>
       <p><?= $tentang ?></p>
 
       <div class="stats">

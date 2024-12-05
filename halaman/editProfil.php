@@ -291,7 +291,7 @@ if (isset($_POST['btnSimpan'])) {
                         <input type="text" id="asal" name="asal" value="<?= $asal ?>">
                     </div>
                     <div class="form-group">
-                        <label for="tentang">Tentang</label>
+                        <label for="tentang">Status</label>
                         <input type="text" id="tentang" name="tentang" value="<?= $tentang ?>">
                     </div>
                 </div>
