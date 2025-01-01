@@ -32,9 +32,9 @@ $data = mysqli_fetch_all($query, MYSQLI_ASSOC);
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block py-0">
                 <ul class="navbar-nav d-flex gap-3 px-0 my-0">
-                    <li class="nav-item"><a class="nav-link" href="">Halaman Utama</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Jadwal</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HalamanUtama1.php">Halaman Utama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="halamanjadwal.php">Jadwal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagekegiatan.php">Kegiatan</a></li>
                 </ul>
             </nav>
             <!-- profil -->

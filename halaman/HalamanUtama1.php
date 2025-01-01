@@ -19,26 +19,17 @@ include '../Template/mainheader.php';
                                 </div>
                                 <!-- daftar teman -->
                                 <div class="container d-flex mx-0 px-0 justify-content-between">
-                                    <div class="card position-relative text-white overflow-hidden" style="width: 100px; height: 150px; background-image: url('../image/dongker.jpg'); background-size: cover; background-position: center;">
-                                        <div class="card-overlay position-absolute bottom-0 start-0 w-100 py-1" style="background: rgba(0, 0, 0, 0.5); text-align: center;">
-                                          <h6 class="m-0">Teman 1</h6>
+                                <?php
+                                include 'pertemanan.php';
+                                foreach($data as $key => $isi){
+                                    $namateman = $isi['nama_teman'];
+                                    $foto = $isi['foto_profil']; ?>
+                                        <div class="card position-relative text-white overflow-hidden" style="width: 100px; height: 150px; background-image: url('../image/<?= $foto ?>'); background-size: cover; background-position: center;">
+                                            <div class="card-overlay position-absolute bottom-0 start-0 w-100 py-1" style="background: rgba(0, 0, 0, 0.5); text-align: center;">
+                                              <h6 class="m-0"><?= $namateman ?></h6>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card position-relative text-white overflow-hidden" style="width: 100px; height: 150px; background-image: url('https://via.placeholder.com/200x300'); background-size: cover; background-position: center;">
-                                        <div class="card-overlay position-absolute bottom-0 start-0 w-100 py-1" style="background: rgba(0, 0, 0, 0.5); text-align: center;">
-                                          <h6 class="m-0">Teman 2</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card position-relative text-white overflow-hidden" style="width: 100px; height: 150px; background-image: url('https://via.placeholder.com/200x300'); background-size: cover; background-position: center;">
-                                        <div class="card-overlay position-absolute bottom-0 start-0 w-100 py-1" style="background: rgba(0, 0, 0, 0.5); text-align: center;">
-                                          <h6 class="m-0">Teman 3</h6>
-                                        </div>
-                                    </div>
-                                    <div class="card position-relative text-white overflow-hidden d-none d-md-block d-xl-none" style="width: 100px; height: 150px; background-image: url('https://via.placeholder.com/200x300'); background-size: cover; background-position: center;">
-                                        <div class="card-overlay position-absolute bottom-0 start-0 w-100 py-1" style="background: rgba(0, 0, 0, 0.5); text-align: center;">
-                                          <h6 class="m-0">Teman 4</h6>
-                                        </div>
-                                    </div>
+                                        <?php } ?>
                                 </div>
                             </div>
                             <!-- catatan kegiatan -->
